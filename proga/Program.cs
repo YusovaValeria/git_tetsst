@@ -44,6 +44,10 @@ namespace proga
                                 Console.Write("Введите B: ");
                                 B = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine(B);
+
+                            case 2:
+                                result = A + B;
+                                Console.WriteLine(result);
                                 break;
 
                         }
