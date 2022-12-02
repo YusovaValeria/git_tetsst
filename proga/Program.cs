@@ -32,7 +32,6 @@ namespace proga
                         if (index > 0)
                             index--;
                         break;
-
                     case ConsoleKey.Enter:
                         switch (index)
                         {
@@ -45,6 +44,9 @@ namespace proga
 
                             case 2:
                                 result = A + B;
+                                Console.WriteLine(result);
+                            case 3:
+                                result = A - B;
                                 Console.WriteLine(result);
                                 break;
 
