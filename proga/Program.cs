@@ -32,6 +32,7 @@ namespace proga
                         if (index > 0)
                             index--;
                         break;
+
                     case ConsoleKey.Enter:
                         switch (index)
                         {
@@ -40,6 +41,8 @@ namespace proga
                                 Console.WriteLine("Введите А:");
                                 A = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine(A);
+                                break;
+
                             case 1:
                                 Console.Write("Введите B: ");
                                 B = Convert.ToInt32(Console.ReadLine());
