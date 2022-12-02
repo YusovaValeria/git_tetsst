@@ -36,9 +36,10 @@ namespace proga
                         switch (index)
                         {
 
-                            case 2:
-                                result = A + B;
-                                Console.WriteLine(result);
+                            case 0:
+                                Console.WriteLine("Введите А:");
+                                A = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine(A);
                                 break;
 
                         }
