@@ -13,9 +13,37 @@ namespace proga
 
             int row = Console.CursorTop;
             int col = Console.CursorLeft;
+
+            int index = 0;
+            int result = 0;
+            int A = 0;
+
             while (true)
             {
-               
+                DrawMenu(menuItems, row, col, index, result);
+                switch (Console.ReadKey(true).Key)
+                {
+                    case ConsoleKey.DownArrow:
+                        if (index < menuItems.Length - 1)
+                            index++;
+                        break;
+                    case ConsoleKey.UpArrow:
+                        if (index > 0)
+                            index--;
+                        break;
+                    case ConsoleKey.Enter:
+                        switch (index)
+                        {
+                            case 0:
+                                Console.WriteLine("Введите А:");
+                                A = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine(A);
+                                break;
+
+                        }
+
+                        break;
+                }
             }
         }
 
