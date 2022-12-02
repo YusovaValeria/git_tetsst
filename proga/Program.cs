@@ -35,16 +35,10 @@ namespace proga
                     case ConsoleKey.Enter:
                         switch (index)
                         {
-                            case 0:
-                                Console.WriteLine("Введите А:");
-                                A = Convert.ToInt32(Console.ReadLine());
-                                Console.WriteLine(A);
-                                break;
 
-                            case 1:
-                                Console.Write("Введите B: ");
-                                B = Convert.ToInt32(Console.ReadLine());
-                                Console.WriteLine(B);
+                            case 2:
+                                result = A + B;
+                                Console.WriteLine(result);
                                 break;
 
                         }
