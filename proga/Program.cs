@@ -70,6 +70,7 @@ namespace proga
                             case 6:
 
                                 Console.WriteLine("exit");
+                                Console.WriteLine("proverka");
                                 return;
                         }
 
