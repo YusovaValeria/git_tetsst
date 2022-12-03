@@ -66,6 +66,11 @@ namespace proga
                                 result = A / B;
                                 Console.WriteLine(result);
                                 break;
+
+                            case 6:
+
+                                Console.WriteLine("exit");
+                                return;
                         }
 
                         break;
