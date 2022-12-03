@@ -34,7 +34,14 @@ namespace proga
                         break;
                     case ConsoleKey.Enter:
                         switch (index)
-                        {                            case 1:
+                        {
+                            case 0:
+                                Console.WriteLine("Введите A:");
+                                A = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine(A);
+                                break;
+
+                            case 1:
                                 Console.WriteLine("Введите B:");
                                 A = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine(B);
@@ -42,6 +49,21 @@ namespace proga
 
                             case 2:
                                 result = A + B;
+                                Console.WriteLine(result);
+                                break;
+
+                            case 3:
+                                result = A - B;
+                                Console.WriteLine(result);
+                                break;
+
+                            case 4:
+                                result = A * B;
+                                Console.WriteLine(result);
+                                break;
+
+                            case 5:
+                                result = A / B;
                                 Console.WriteLine(result);
                                 break;
                         }
